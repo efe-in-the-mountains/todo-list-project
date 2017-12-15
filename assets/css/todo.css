@@ -1,0 +1,11 @@
+
+.done {
+    color: gray;
+    text-decoration: line-through;
+}
+
+#listContainer {
+    background-color: darkseagreen;
+    width: 35vw;
+    margin: 0 auto;
+}
