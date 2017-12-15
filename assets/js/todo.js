@@ -3,17 +3,29 @@ $("document").ready(function(){
 
 
 // line out li after click
-$("li").click(function () {
+$("ul").on("click", "li", function () {
     $(this).toggleClass("done");
-    console.log("connected");
+    
 });
 
 // click span and delete
-$("span").click(function (e) {
+$("ul").on("click","span", function (e) {
     $(this).parent().fadeOut(500, function() {
         $(this).remove();
     });
     e.stopPropagation();
 });
+
+// enter text in input and add to list
+$("input[type='text']").keypress(function(e){
+    if (e.which === 13) {
+        var todoText = $(this).val();
+        $(this).val("");
+        $("ul").append("<li><span>x</span> " + todoText + "</li>")
+    }
+});
+
+
+
 
 });
