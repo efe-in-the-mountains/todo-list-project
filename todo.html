@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My ToDo List</title>
-    <link rel="stylesheet" href="assets/css/todo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My ToDo List</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/todo.css">
 </head>
+
 <body>
-    
-<div id="listContainer">
-    <h1>my TO-DO LIST</h1>
-    <input type="text">
 
+  <div id="listContainer">
+    <h1><i id="addBtn" class="fas fa-plus-square"></i> todo list</h1>
+    <input id="inputBox" type="text" placeholder="Add New Todo Here">
     <ul>
-        <li><span>x</span> build this list</li>
-        <li><span>x</span> debug </li>
-        <li><span>x</span> play video games</li>
+      <li>
+        <span>
+                    <i class="fas fa-minus-square removeBtn"></i>
+                </span>click on the plus to add a new todo</li>
+      <li>
+        <span>
+                    <i class="fas fa-minus-square removeBtn"></i>
+                </span>click on me to mark me completed</li>
+      <li>
+        <span>
+                    <i class="fas fa-minus-square removeBtn"></i>
+                </span>hover over me to show my delete button</li>
     </ul>
+  </div>
 
-</div>
-
-
-
-
-
-    <script src="assets/js/lib/jquery-3.2.1.js"></script>
-    <script src="assets/js/todo.js"></script>
+  <script src="assets/js/lib/jquery-3.2.1.js"></script>
+  <script src="assets/js/todo.js"></script>
 </body>
+
 </html>
