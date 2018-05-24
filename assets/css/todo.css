@@ -2,6 +2,15 @@ html {
   font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../img/fly.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
 h1 {
   background-color: steelblue;
   color: blanchedalmond;
